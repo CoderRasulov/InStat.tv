@@ -19,6 +19,7 @@ class MatchInfoViewController: UIViewController {
             matchView?.configure(model: matchInfoResponse)
             matchView?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapMatchView)))
         }
+           
     }
 
     private func getMatchInfo(complation: @escaping(MatchInfoResponse) -> Void) {
